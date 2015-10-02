@@ -42,16 +42,20 @@ function FindClass($globalClass, $class){
 <script>
     angular.module("app",[]).controller('ctrl',['$scope',function($scope){
 	
-	$scope.classes = [
+	$scope.classes = {
 	    'default'	: ['debug'],
 	    'success'	: [],
 	    'warning'	: ['warning'],
 	    'danger'	: ['error', 'critical', 'alert', 'emergency'],
 	    'info'	: ['notice', 'info']
-	];
+	};
 	
 	$scope.getTrClass = function(type){
-	    
+	    for(var i=0; i<$scope.classes.length;i++){
+		if(jQuery.inArray(type.toUpperCase(),$scope.classes[i]) > -1){
+		    return 
+		}
+	    }
 	}
 	
 	$scope.logs = [];
