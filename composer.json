@@ -1,5 +1,5 @@
 {
-    "name": "your-name-here/DatabaseLogger",
+    "name": "Dadoudidou/DatabaseLogger",
     "description": "DatabaseLogger plugin for CakePHP",
     "type": "cakephp-plugin",
     "require": {
