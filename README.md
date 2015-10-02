@@ -9,3 +9,8 @@ The recommended way to install composer packages is:
 ```
 composer require your-name-here/DatabaseLogger
 ```
+'Log' => [
+	'all' => [
+	    'className' => 'DatabaseLogger\Log\Engine\DatabaseLog',
+	    'levels' => ['notice', 'info', 'debug', 'warning', 'error', 'critical', 'alert', 'emergency']
+	],
